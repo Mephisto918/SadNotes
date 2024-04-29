@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured Analysis</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <header><h1>Structured Analysis</h1></header>
+        <section>
+            <h1>What is Structured Analysis</h1>
+            <p>Structured Analysis is a development method that allows the analyst to understand to understand the system and its activities in a logical way</p>
+            <p>It is a systematic approach, which uses <span>graphical cons</span> that analyze and refine the objectives of an existing system and develop a new system specification which can be easily understandable by user</p>
+
+            <div id="attributes">
+                <h2>ATTRIBUTES OF STRUCTURED ANALYSIS</h2>
+                <ul>
+                    <li>It is graphical which specifies the presentaion of application</li>
+                    <li>It divides the processes so that it gives a clear picture of system flow</li>
+                    <li><span>It is logical rather than pysical</span> i.e, the elements of system do not depend on vendor or hardware</li>
+                    <li><span>It is a approach that works from high-level overviews to lower-level details</span></li>
+                </ul>
+            </div>
+        </section>
+        <header><h1>STRUCTURE ANALYSIS</h1></header>
+        <section>
+            <h2>During Structured Analysis, various con and techniques are used for system development. They are</h2>
+            <ul>
+                <li>Data Flow Diagrams</li>
+                <li>Data Dictionary</li>
+                <li>Decision Trees</li>
+                <li>Decision Tables</li>
+                <li>Structured English</li>
+                <li>Pseudocode</li>
+            </ul>
+            <div class="con">
+                <div class="con-items">
+                    <h3>Data Flow Diagram <span>(DFD)</span> or <span>Bubble Chart</span></h3>
+                    <p>It is a technique developed by <span>Larry Constantine</span> to express the requirements of system in a graphical form</p>
+                    <ul>
+                        <li>It shows the flow of data between various functions of system and specifies how the current systems is implemented</li>
+                        <li>It is an initial stage of design phase that functionally divides the requirement specifications down to the lowest level of detail</li>
+                        <li>Its graphical nature makes it a good communication tool between user and analyst or analyst and system designer</li>
+                        <li><span>It gives an overview of what data a system processes, what transformation are performed, what data are being stored, what results are produced and where they flow</span></li>
+                    </ul>
+                    <h3>Basic Elements of Data Flow Diagrams (DFD)</h3>
+                    <div>
+                        <p>Symbolic Name</p>
+                        <p>Symbol</p>
+                        <p>Meaning</p>
+                    </div>
+                    <h3>Types of Data Flow Diagram(DFD)</h3>
+                    <div class="con" style="flex-direction: row;">
+                        <div class="con-items">
+                            <h3>Pysical DFD</h3>
+                            <p><span>It is implementation dependent. It shows which functions are performed</span></p>
+                            <p>It provides low level details of hardware, software, files, and people</p>
+                            <p>It depicts how the current system operates and how a system will be implemented</p>
+                        </div>
+                        <div class="con-items">
+                            <h3>Logical DFD</h3>
+                            <p><span>It is implementation independent. It focuses only on the flow of data between processes</span></p>
+                            <p>It explains events of systems and data required by each event</p>
+                            <p>It shows how business operates; not how the system can be implemented</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="con-items">
+                    <h3>Context Diagram</h3>
+                    <p>A <span>context diagram helps in understanding the entire system by one DFD</span> which gives the overview of a system. It starts with mentoring major processes with little details and them goes onto giving more details of the processes with the top-down approach</p>
+                </div>
+                <div class="con-items">
+                    <h3>Data Dictionary</h3>
+                    <p>A <span>data dictionary is a structured repository of data elements in the system.</span> <span>It stores all the description of all DFD data elements that is, details and definitions of data flows, data stores, data stored in data stores, and the processes</span></p>
+                    <p>A data dictionary <span>improves the communication between the analys and the user</span>. <span>It plays an important role in building databse.</span> Most DBMSs have a data dictionary as a standard feature</p>
+
+                    <table>
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th>Data Name</th>
+                            <th>Desc</th>
+                            <th>No. of Char</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <td>ISBN</td>
+                            <td>ISBN no.</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>TITLE</td>
+                            <td>title</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>SUB</td>
+                            <td>Book Sub</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td>ANAME</td>
+                            <td>Author Name</td>
+                            <td>15</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="con-items">
+                    <h3>Decision Trees</h3>
+                    <p><span>Decision Trees are a method for defining complex relationships by describing descisions and avoiding the problems in communication</span>. A <span>decision tree is a diagram</span> that shows alternative actions and conditions within horizontal tree framework. Thus, it depicts which condition to consider first, second, and so on</p>
+                    <p><span>Decision Trees depicts the relationship of each condition and their permissible actions</span></p>
+                    <p>A <span>square node indicates an action and a circle indicates condition</span>. It forces analyst to consider the sequence of decision and identifies the actual decision that must be made</p>
+                </div>
+                <div class="con-items">
+                    <h3>Decision Tables</h3>
+                    <p>Decision Tables <span>are a method of describing the complex logical relationship in a precise manner which is easily understandable</span></p>
+                    <ul>
+                        <li>It is useful in situations where the resulting actions depend on the occurence of one or several combinations of independent condition</li>
+                        <li>It is a matrix containing row or columns for defining a problem and the actions</li>
+                    </ul>
+                    <h3>Components of Decision Tables</h3>
+                    <div class="con">
+                        <div class="con-items">
+                            <ul>
+                                <li><span>Condition Stub</span> - It is in the upper left quadrant which lists all the condition to be checked</li>
+                                <li><span>Action Stub </span>- It is in the lower left quadrant which outlines all the action to be carried out to meet such condition</li>
+                                <li><span>Condition Entry</span> - It is in upper right quadrant which provides answers to questions asked in condition stub quadrant</li>
+                                <li><span>Action Entry</span> - It is in lower right quadrant which indicates the appropriate action resulting from the answers to the conditions in the condition entry quadrant</li>
+                            </ul>
+                        </div>
+                        <div class="con-items">
+                            <p>The entries in decision table are given by <span>Decision Rules</span> which define the relationships between combinations of conditions and courses of actions. In rules section,</p>
+                            <ul>
+                                <li><span>Y</span> shows the existence of a condition</li>
+                                <li><span>N</span> represents the condition, which is not satisfied</li>
+                                <li><span>A blank</span> - against action states it is to be ignored</li>
+                                <li><span>X</span> (or a check mark will do) against action states it is to be carried out</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="con-items">
+                    <h3>Structured English</h3>
+                    <p>Structured Enlish is derived from <span>structured programming</span> language which gives more understandable and precise description of process. It is based on procedural logic that uses construction and imperative sentences designed to perform operation for action</p>
+                    <ul>
+                        <li>It is best used when sequences and loops in a program must be considered and the problem needs sequences of action with decision</li>
+                        <li>It does no have strict syntax rule. It expresses all logic in terms of sequential decision structures and iterations</li>
+                    </ul>
+                </div>
+                <div class="con-items">
+                    <h3>Pseudocode</h3>
+                    <p>A Pseudocode <span>does not confronm to any programming language and expresses logic in plain English</span></p>
+                    <ul>
+                        <li>It may specify the physical programming logic without actual coding during and after the physical design</li>
+                        <li>It is used in conjunction with structured programming</li>
+                        <li>It replaces the flowcharts of a program</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <a href="../index.html">&lt;-</a>
+</body>
+</html>
