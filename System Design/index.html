@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <header><h1>System Design</h1></header>
+        <section>
+            <h2>System Design</h2>
+            <p><span>System design</span> is the phase that bridges the gap between problem domain and the existing system in a manageable way.</p>
+            <p>In this phase, the complex activity of system development is divided into several smaller sub-activities, which coordinates with each other to achieve the main objective of system development</p>
+        </section>
+        <header><h1>INPUTS TO SYSTEM DESIGN</h1></header>
+        <section>
+            <ul>
+                <li>Statement of work</li>
+                <li>Requirement determination plan</li>
+                <li>Current situation analysis</li>
+                <li>Proposed system reqyuirements including a conceptual data model, <span>modified DFDs</span>, and Metadata(data about data)</li>
+            </ul>
+        </section>
+        <header><h1>OUTPUT TO SYSTEM DESIGN</h1></header>
+        <section>
+            <ul>
+                <li>Infrastructure and organization changes for the proposed system</li>
+                <li>A data schema, often a relational schema</li>
+                <li>Metadata to define the tables/files and columns/data-items</li>
+                <li>A function hierarchy diagram or web page map that graphically describes the program structure</li>
+                <li>Actual or Pseudocode for each module in the program</li>
+                <li>A prototype for the proposed system</li>
+            </ul>
+        </section>
+        <head><h1>TYPES OF SYSTEM DESIGN</h1></head>
+        <section>
+            <div class="con">
+                <div class="con-items">
+                    <h3>Logical Design</h3>
+                    <p>Logical design pertains to an abstract representation of the data flow, inputs, and outputs of the system. It describes the inputs(sources), outputs(destination), databases(data stores), procedures(data flows) all in format that meets the user requirements</p>
+                    <p><span>Data flow diagram, E-R Diagram</span> modeling are used</p>
+                </div>
+                <div class="con-items">
+                    <h3>Physical Design</h3>
+                    <p>Physical design relates to the actual input and output processes of the system. <span>It focuses on how data is entered into a system, verified, processed, and displayed as output</span></p>.
+                    <p>It produces the working system by defining the design specification that specifies exactly what the candidate system does. It is concerned with user interface deisgn, process designm and data design.</p>
+                </div>
+                <div class="con-items">
+                    <h3>Architechural Design</h3>
+                    <p>It is also known as <span>high level design</span> that focuses on the deisgn of the system architecture</p>
+                    <p>It describes the structure and behavior of the system. It defines the structure and relationship between various moules of system development process</p>
+                </div>
+                <div class="con-items">
+                    <h3>Detailed Design</h3>
+                    <p>It follows Architechural deisgn and focusses on developmentof each module</p>
+                </div>
+            </div>
+        </section>
+        <header><h1>ENTITY-RELATIONSHIP MODEL</h1></header>
+        <section>
+            <p>It is a technique used in database deisgn that helps describe the relationship between various entities of an organization</p>
+            <ul>
+                <li><span>ENTITY</span> - It specifies distinct real world items in application. For example: vendor, item, student, course, teachers, etc</li>
+                <li><span>RELATIONSHIP</span> - They are the meaningful dependencies between entities. For example, vendor supplies items, teachers teaches courses, then supplies and course are rlationship</li>
+                <li><span>ATTRIBUTES</span> - It specifies the properties of relationships. For example, vendor code, student name. Symbols used in E-R model and their respective meaning</li>
+            </ul>
+            <p>Three types of relationships can exist between two sets of data: <span>one-to-one</span>, <span>one-to-many</span>, and <span>many-to-many</span>.</p>
+        </section>
+        <header><h1>FILE ORGANIZATION</h1></header>
+        <section>
+            <p>It describes how records are stored within a file</p>
+            <p>There are four file oraganization methods</p>
+            <ol>
+                <li>SERIAL</li>
+                <li>SEQUALTIAL</li>
+                <li>DIRECT</li>
+                <li>INDEXED</li>
+            </ol>
+            <div class="con">
+                <div class="con-items">
+                    <h3>SERIAL</h3>
+                    <p>Records are stored in a chronological order(in order as they are input or occur)</p>
+                    <p>Examples - Recording of telephone charges, ATM transactions, Telephone queues.</p>
+                </div>
+                <div class="con-items">
+                    <h3>SEQUENTIAL</h3>
+                    <p>Records are stored in order based on a key field wichi contains a value that uniquely identifies a record</p>
+                    <p>Examples - Phone directories</p>
+                </div>
+                <div class="con-items">
+                    <h3>DIRECT</h3>
+                    <p>Each record is stored based on a physical address or location on the device. Address is calculated from the values stored in the recod's key field. Randomizing routine or hashing algorithm does the conversion</p>
+                </div>
+                <div class="con-items">
+                    <h3>INDEXED</h3>
+                    <p>Records can be processed both sequentially and non-sequencially using indexes</p>
+                </div>
+            </div>
+        </section>
+        <header><h1>FILE ACCESS</h1></header>
+        <section>
+            <p>One can access a file using either <span>Sequencial Access</span> or <span>Random Access</span></p>
+            <p>File Access methods allow computer programs read or write records in a file</p>
+            <div class="con">
+                <div class="con-items">
+                    <h3>Sequencial Access</h3>
+                    <p>Every record on the file is processed starting with the first record until the <span>End of File (EOF)</span> is reached. It is efficient when a large number of records on the file need to be acceessed at any given time. Data stored on tape (sequential access) can be accessed only sequentially</p>
+                </div>
+                <div class="con-items">
+                    <h3>Direct (Random) Access</h3>
+                    <p>Records are located by knowing their physical locations or addresses on the device rather than their positions relative to ther records. Data stored on a CD device (direct-access) can be accessed either sequenctially or randomly</p>
+                </div>
+            </div>
+        </section>
+        <header><h1>TYPES OF FILES USED IN AN ORGANIZATION SYSTEM</h1></header>
+        <section>
+            <ul>
+                <li><span>Master file</span> - It contains the current information for a system. For example, customer file, student file, telepohone directory</li>
+                <li><span>Table file</span> - It is a type of master file that changes infrequently and stored in a tabular format. For example, storing Zipcode</li>
+                <li><span>Transaction file</span> - It contains the day-to-day information generated from business activities. It is used to update or process the master file. For example, Addresses of the employees</li>
+                <li><span>Temporary file</span> - It is created and used whenever needed by a system</li>
+                <li><span>Mirror file</span> - They are the exact duplicated of other files. Help minimize the risk of downtime in cases when the original becomes unusable. They must be modified each time the original file is changed</li>
+                <li><span>Log files</span> - They contains copies of master and transaction records in order to chronicle any changes that are made to the master file. It facilitates auditing and provides mechanism for recovery in case a system failure</li>
+                <li><span>Archive files</span> - Backup files that contains historical versions of other files</li>
+            </ul>
+        </section>
+        <header><h1>DOCUMENTATION</h1></header>
+        <section>
+            <p><span>Documentation</span> is a process of recording the information for any reference or operational purpose. It helps users, managers, and IT staff, who require it. It is important that prepared documents must be updated on regular basis to trace the progress of the system easily.</p> 
+            
+            <div class="con">
+                <div class="con-item">
+                    <h3>DOCUMENTATION ADVANTAGES</h3>
+                    <ul>
+                        <li>It can reduce system downtime, cut costs, and speed up maintenance tasks.</li>
+                        <li>It provides the clear description of formal flow of present system and helps to understand the type of input data and how the output can be produced</li>
+                        <li>It provides effective and efficient way of communication between technical and nontechnical users about system</li>
+                        <li>It facilitates the training of new users so that he can easily understand the flow of system</li>
+                        <li>It helps the user to solve the problems suc as troubleshooting and helps the manager to take better final descisions of the organization system</li>
+                        <li>It provides better control to the internal or external working of the system</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <header><h1>TYPES OF DOCUMENTATION</h1></header>
+        <section>
+            <p>When it comes to System Design, there are four main documentation</p>
+            <ol>
+                <li>PROGRAM</li>
+                <li>SYSTEm</li>
+                <li>OPERATIONS</li>
+                <li>USER</li>
+            </ol>
+            <div class="con">
+                <div class="con-item">
+                    <h3>PROGRAM</h3>
+                    <ul>
+                        <li>It describes <span>inputs, ouputs, and processing logic</span> for all the program modules</li>
+                        <li>This documentaion guides programmers, who construct modules that are well supported and descriptions that can be understood and maintained easily</li>
+                    </ul>
+                </div>
+                <div class="con-item">
+                    <h3>SYSTEM</h3>
+                    <p><span>System documentation</span> serves as the technical specification for the <span>IS</span> and how the objectives of the IS are accomplished. Users, managers, and IS owners are need never reference system documentaion</p>
+                    <p>System documentaion provides the basis for understanding the technincal aspects of IS when modifactions are made</p>
+                </div>
+                <div class="con-item">
+                    <h3>OPERATIONS</h3>
+                    <p><span>Operations documentation</span> contains all information needed for processing and distributing online and printed output. Operations documetation should be clear, concise, and available online if possible</p>
+                    <ul>It includes the following information:
+                        <li>Program, system analyst, programmer, and system identification</li>
+                        <li>Scheduling information for printed output, such as report, execution frequency and deadlines</li>
+                        <li>Input files, their source, output files, and their distinations</li>
+                        <li>E-mail and report distribution lists</li>
+                        <li>Special forms required, including online forms</li>
+                        <li>Error and information messages to operators and restart procedures</li>
+                        <li>Special instructions, such as security requirements</li>
+                    </ul>
+                </div>
+                <div class="con-item">
+                    <h3>USER</h3>
+                    <p>It includes instrustions and information to the users who will interact with the system</p>
+                    <p>For example, user manual, help guides, and tutorials. User documentation is valuable in training users and for reference purpose. It must be clear, understandable, and readily accesible to users at all levels</p>
+                    <ul>A user documentation should include:
+                        <li>A system overview that clearly describes all major system features, capabilities, and limitations</li>
+                        <li>Description of source documentation content, preperation, processing, and samples</li>
+                        <li>Overview of menu and data entry screen optionsm contentsm and processing instructions</li>
+                        <li>Examples of reports that are produced regularly or availble at the users request, including sample</li>
+                        <li>Security and audit trail information</li>
+                        <li>Explanation of responsibility for specific input, output, or processing requirements</li>
+                        <li>Procedures for requesting changes and reporting problems</li>
+                        <li>Examples of exceptions and error situations</li>
+                        <li><span>Frequently asked questions (FAQs)</span></li>
+                        <li>Explanation of how to get help and procedures for updating the user manual.</li>
+                    </ul>
+
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <a href="../index.html">&lt;-</a>
+</body>
+</html>
