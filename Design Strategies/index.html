@@ -26,7 +26,144 @@
         <section>
             <h3>Structured Design</h3>
             <p>Structured design is a <span>data-flow based</span> methodology that helps in identifyinh the input and ouput of the developing system. The main objective of strucured design is to minimize the complexity and increase the modularity of a program. Structured design also helps in describing the functional aspect of the system</p>
-            <p>In structured designing, the system specification acts as a basis for pgraphical representig the flow of data and sequcne of process involved in a software development with the help of <span>DFDs</span>. After developing the DFDs for the software system, the next step is to develop the structure char</p>
+            <p>In structured designing, the system specification acts as a basis for pgraphical representig the flow of data and sequcne of process involved in a software development with the help of <span>DFDs</span>. After developing the DFDs for the software system, the next step is to develop the structure chart</p>
+        </section>
+        <header><h1>INPUT / OUTPUT & FORMS DESIGN</h1></header>
+        <section>
+            <h3>INPUT DESIGN</h3>
+            <p>In an information system, input is the raw data that is processed to produce output. During the input design, the developers must consider the input devices such as <span>PC, MICR, OMR</span>, etc</p>
+            <p>Therefore, the quality of system input determines the quality of system output.</p>
+            <ul>Well-designed input forms and screens have following properties - 
+                <li>It should serve specific purpose effectively such as storing, recording, and retrievin the information</li>
+                <li>It ensures proper completion with accuracy</li>
+                <li>It should be easy to fill and straightforward</li>
+                <li>It should focus on users attetion, consistency, and simplicity</li>
+                <li>All these objectives are obtained using the knowledge of basic design principles regarding -</li>
+                <ul>
+                    <li>What are the inputs needed for the system?</li>
+                </ul>
+            </ul>
+        </section>
+        <section>
+            <h3>OBJECTIVES FOR INPUT DESIGN</h3>
+            <ul>
+                <li>To design data entry and input procedures</li>
+                <li>To reduce input volume</li>
+                <li>To design source documents for data capture or device other data capture methods</li>
+                <li>To design input data records, data entry screens, user interface screens, etc</li>
+                <li>To use validation checks and develop effective input controls</li>
+            </ul>
+        </section>
+        <section>
+            <h3>DATA INPUT METHODS</h3>
+            <p>It is important to design appropriate data input methods to prevent errors while entering data. These methods depend on wheter the data is entered by customers in forms manually and later entered by data entr operators, or data is directly entered by users on the PCs</p>
+            <ul>A system should prevent user from making mistakes by - 
+                <li>Clear form design by leaving enough space for writing legibly</li>
+                <li>Clear instructions to fill form</li>
+                <li>Clear form design</li>
+                <li>Reducing key strokes</li>
+                <li>Immediate erro feedback</li>
+            </ul>
+            <ul>Some of the popular data inputs methods are - 
+                <li>Batch input method (Offline data input method)</li>
+                <li>Online data input method</li>
+                <li>Computer readable forms</li>
+                <li>Interactive data input</li>
+            </ul>
+        </section>
+        <section>
+            <h3>INPUT INTEGRITY CONTROLS</h3>
+            <p><span>Input integrity controls include a number of methods to eliminate common input errors by end-users.</span> They also include checks on the value of individual fields; both for format and the completeness of all inputs</p>
+            <p>Audit trails for data entry and other system operations are created using transaction logs which gives a record of all changes introduced in the databaseto provide security and means of recovery in case of any failure</p>
+        </section>
+        <header><h1>OUTPUT DESIGN</h1></header>
+        <section>
+            <p>The design of output is the most important task of any system. During output design, developers identify the type of outputs needed, and consider the necessary output controls and prototype report layouts</p>
+        </section>
+        <section>
+            <h3>OBJECTIVES OF OUTPUT DESIGN</h3>
+            <ul>The objectives of OUTPUT design are -
+                <li>To develop output design that serves the intended purpose and eliminates the production of unwanted output</li>
+                <li>To develop the output design that meets the end users requirements</li>
+                <li>To deliver the appropriate quantity of output</li>
+                <li>To form the output in appropriate format and direct it to the right person</li>
+                <li>To make the output available on time for making good decisions</li>
+            </ul>
+        </section>
+        <section>
+            <h3>EXTERNAL OUTPUTS</h3>
+            <p>Manufacturers create and design external outputs for prints. External outputs enable the system to leave the trigger actions on the part of their recipients or confirm actions to thier recipients. Some of the external outputs are designed as turnaround output, which are implemented as a form and re-enter the system as an input</p>
+        </section>
+        <section>
+            <h3>INTERNAL OUTPUTS</h3>
+            <p>Internal outpus are present inside the system, and used by end-users and managers. They support the management in decision making and report</p>
+            <ul>There are three types of reports produced by management information -
+                <li><span>Detailed Reports</span> - They contain present information which has almost no filtering or restriction which has almost no filtering or restriction generated to assist management planning and control</li>
+                <li><span>Summary Reports</span> - They contain trends and potential problems which are categorized and summarized that are generated for manager who do not want details</li>
+                <li><span>Exceptional Reports</span> - They contain exceptions, filtered data to some condition or standard</li>
+            </ul>
+        </section>
+        <section>
+            <h3>OUTPUT INTEGRITY CONTROLS</h3>
+            <p><span>Output integrity controls</span> include routing codes to identify the receiving system, and verification messages to confirm successful receipt of messages that are handled by network protocol. Printed of screen-format reports should include date/time for report printing and the data. Multipage reports contain report title or description, and pagination. Pre-printed forms usually include a version number and effective date.</p>
+        </section>
+        <header><h1>FORMS DESIGN</h1></header>
+        <section>
+            <p>Both forms and reports are the product of input and output design and are business document consisting of specified data. The main difference is that forms provide fields for data input but reports are purely used for reading. For example, <span>order forms, employment and credit application</span>, etc</p>
+            <ul>
+                <li>During form designing, the designers should know -
+                    <ul>
+                        <li>who will use them</li>
+                        <li>where would they be delivered</li>
+                        <li>the purpose of the form or report</li>
+                    </ul>
+                </li>
+                <li>During form design, automated design tools enhance the developer's ability to prototype forms and reports and present them to end users for evaluation</li>
+            </ul>
+        </section>
+        <section>
+            <h3>OBJECTIVES OF GOOD FORM DESIGN</h3>
+            <ul>A good form design is necessary to ensure the following -
+                <li>To keep the screem simple by giving proper sequence, information, and clear captions</li>
+                <li>To meet the intended purpose by using appropriate forms</li>
+                <li>To ensure the completion of form with accuracy</li>
+                <li>To keep the forms attractive by using icons, inverse video, or blinking cursors etc</li>
+                <li>To facilitate navigation</li>
+            </ul>
+        </section>
+        <section>
+            <h1>TYPES OF FORMS</h1>
+            <div class="con">
+                <div class="con-items">
+                    <h3>FLAT FORMS</h3>
+                    <ul>
+                        <li>It is a single copy form prepared manually or by a machine and printed on a paper. For additional copies of the original, carbon papers are inserted between copies</li>
+                        <li>It is a simplest and inexpensive form to design, print, and reproduce, which usess less volume</li>
+                    </ul>
+                </div>
+                <div class="con-items">
+                    <h3>Unit Set/Snap out Forms</h3>
+                    <ul>
+                        <li>These are papers with <span>one-time</span> carbons interleaved into unit sets for either handwritten or machine use</li>
+                        <li>Carbons may be either blue or black, standard grade medium intensity. Generally, blue carbons are best for handwritten forms while balck carbons are best for machine use</li>
+                    </ul>
+                </div>
+                <div class="con-items">
+                    <h3>Continuous strip/ Fanfold Forms</h3>
+                    <ul>
+                        <li>These are multiple unit forms joined in a continuous strip with no perforations between each pair of forms</li>
+                        <li>It is a less expensive method for large volume use</li>
+                    </ul>
+                </div>
+                <div class="con-items">
+                    <h3>No Carbon Required (NCR) Paper</h3>
+                    <ul>
+                        <li>They use carbonless papers which have two chemical coatings (capsules), one on the face and the other on the back of a sheet of paper.</li>
+                        <li>When a pressure is applied, the two capsules interact and create an image</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>"Design is not just what it looks like and feels like. Design is how it works."</h3>
         </section>
     </main>
     <a href="../index.html">&lt;-</a>
